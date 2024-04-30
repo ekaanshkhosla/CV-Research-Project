@@ -1,0 +1,359 @@
+### Starting TaskPrologue of job 801925 on tg096 at Wed 17 Apr 2024 02:41:04 PM CEST
+Running on cores 0-31 with governor ondemand
+Wed Apr 17 14:41:04 2024       
++-----------------------------------------------------------------------------------------+
+| NVIDIA-SMI 550.54.15              Driver Version: 550.54.15      CUDA Version: 12.4     |
+|-----------------------------------------+------------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id          Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |
+|                                         |                        |               MIG M. |
+|=========================================+========================+======================|
+|   0  NVIDIA A100-SXM4-40GB          On  |   00000000:01:00.0 Off |                    0 |
+| N/A   35C    P0             52W /  400W |       0MiB /  40960MiB |      0%      Default |
+|                                         |                        |             Disabled |
++-----------------------------------------+------------------------+----------------------+
+                                                                                         
++-----------------------------------------------------------------------------------------+
+| Processes:                                                                              |
+|  GPU   GI   CI        PID   Type   Process name                              GPU Memory |
+|        ID   ID                                                               Usage      |
+|=========================================================================================|
+|  No running processes found                                                             |
++-----------------------------------------------------------------------------------------+
+### Finished TaskPrologue
+
+[I 2024-04-17 14:42:09,388] Using an existing study with name 'convNext_optuna_try4' instead of creating a new one.
+Best trial's number:  3
+Best score: 0.26784130830320374
+Best hyperparameters:
+image_size: 256
+batch_size: 4
+learning_rate: 6.738220887446238e-06
+Number of trials completed: 9
+Number of pruned trials: 10
+Total number of trails completed: 19
+Number of trials to run: 31
+==================== Training of trial number:20 ====================
+Image size: 256
+Batch size: 16
+Learning rate: 0.000017
+Best multi_class_log_loss on Validation data until now: 0.26784130830320374
+[I 2024-04-17 14:49:22,236] Trial 20 pruned. 
+Epoch 1/25, Training Loss: 0.5032, Validation Loss: 0.3647
+Best multi_class_log_loss on Validation data until now: 0.26784130830320374
+==================== Training of trial number:21 ====================
+Image size: 224
+Batch size: 4
+Learning rate: 0.000260
+Best multi_class_log_loss on Validation data until now: 0.26784130830320374
+[I 2024-04-17 14:56:31,647] Trial 21 pruned. 
+Epoch 1/25, Training Loss: 0.3792, Validation Loss: 0.6284
+Best multi_class_log_loss on Validation data until now: 0.26784130830320374
+==================== Training of trial number:22 ====================
+Image size: 256
+Batch size: 8
+Learning rate: 0.000191
+Best multi_class_log_loss on Validation data until now: 0.26784130830320374
+Epoch 1/25, Training Loss: 0.1801, Validation Loss: 0.3075
+Best multi_class_log_loss till now on the current trail on Validation data: 0.307545276841098
+Epoch 2/25, Training Loss: 0.0517, Validation Loss: 0.5827
+Epoch 3/25, Training Loss: 0.0395, Validation Loss: 0.7125
+Epoch 4/25, Training Loss: 0.0353, Validation Loss: 0.7500
+[I 2024-04-17 15:34:50,553] Trial 22 finished with value: 0.26784130830320374 and parameters: {'image_size': 256, 'batch_size': 8, 'learning_rate': 0.00019116933114423008}. Best is trial 3 with value: 0.26784130830320374.
+Epoch 5/25, Training Loss: 0.0275, Validation Loss: 1.0586
+Very bad trail
+Best multi_class_log_loss on Validation data until now: 0.26784130830320374
+==================== Training of trial number:23 ====================
+Image size: 256
+Batch size: 8
+Learning rate: 0.000064
+Best multi_class_log_loss on Validation data until now: 0.26784130830320374
+[I 2024-04-17 15:42:34,999] Trial 23 pruned. 
+Epoch 1/25, Training Loss: 0.1631, Validation Loss: 0.3340
+Best multi_class_log_loss on Validation data until now: 0.26784130830320374
+==================== Training of trial number:24 ====================
+Image size: 256
+Batch size: 8
+Learning rate: 0.000336
+Best multi_class_log_loss on Validation data until now: 0.26784130830320374
+[I 2024-04-17 16:02:05,732] Trial 24 pruned. 
+Epoch 1/25, Training Loss: 0.2492, Validation Loss: 0.7997
+Best multi_class_log_loss on Validation data until now: 0.26784130830320374
+==================== Training of trial number:25 ====================
+Image size: 256
+Batch size: 8
+Learning rate: 0.000015
+Best multi_class_log_loss on Validation data until now: 0.26784130830320374
+Epoch 1/25, Training Loss: 0.3924, Validation Loss: 0.2969
+Best multi_class_log_loss till now on the current trail on Validation data: 0.29692613899255305
+Epoch 2/25, Training Loss: 0.0256, Validation Loss: 0.3702
+Epoch 3/25, Training Loss: 0.0072, Validation Loss: 0.4174
+Epoch 4/25, Training Loss: 0.0048, Validation Loss: 0.4936
+Epoch 5/25, Training Loss: 0.0046, Validation Loss: 0.4446
+[I 2024-04-17 16:59:09,261] Trial 25 finished with value: 0.26784130830320374 and parameters: {'image_size': 256, 'batch_size': 8, 'learning_rate': 1.4967946453266406e-05}. Best is trial 3 with value: 0.26784130830320374.
+Epoch 6/25, Training Loss: 0.0012, Validation Loss: 0.5787
+Early stopping triggered after 6 epochs.
+Best multi_class_log_loss on Validation data until now: 0.26784130830320374
+==================== Training of trial number:26 ====================
+Image size: 256
+Batch size: 8
+Learning rate: 0.000117
+Best multi_class_log_loss on Validation data until now: 0.26784130830320374
+[I 2024-04-17 17:06:51,299] Trial 26 pruned. 
+Epoch 1/25, Training Loss: 0.1400, Validation Loss: 0.4906
+Best multi_class_log_loss on Validation data until now: 0.26784130830320374
+==================== Training of trial number:27 ====================
+Image size: 256
+Batch size: 8
+Learning rate: 0.000045
+Best multi_class_log_loss on Validation data until now: 0.26784130830320374
+[I 2024-04-17 17:14:33,098] Trial 27 pruned. 
+Epoch 1/25, Training Loss: 0.1866, Validation Loss: 0.3619
+Best multi_class_log_loss on Validation data until now: 0.26784130830320374
+==================== Training of trial number:28 ====================
+Image size: 256
+Batch size: 8
+Learning rate: 0.000612
+Best multi_class_log_loss on Validation data until now: 0.26784130830320374
+[I 2024-04-17 17:22:15,257] Trial 28 pruned. 
+Epoch 1/25, Training Loss: 2.3085, Validation Loss: 2.3002
+Best multi_class_log_loss on Validation data until now: 0.26784130830320374
+==================== Training of trial number:29 ====================
+Image size: 224
+Batch size: 16
+Learning rate: 0.000188
+Best multi_class_log_loss on Validation data until now: 0.26784130830320374
+[I 2024-04-17 17:27:45,534] Trial 29 pruned. 
+Epoch 1/25, Training Loss: 0.1533, Validation Loss: 0.5540
+Best multi_class_log_loss on Validation data until now: 0.26784130830320374
+==================== Training of trial number:30 ====================
+Image size: 256
+Batch size: 4
+Learning rate: 0.000011
+Best multi_class_log_loss on Validation data until now: 0.26784130830320374
+Epoch 1/25, Training Loss: 0.3772, Validation Loss: 0.2959
+Best multi_class_log_loss till now on the current trail on Validation data: 0.29590254132761123
+Epoch 2/25, Training Loss: 0.0260, Validation Loss: 0.5059
+Epoch 3/25, Training Loss: 0.0084, Validation Loss: 0.4270
+Epoch 4/25, Training Loss: 0.0043, Validation Loss: 0.4806
+Epoch 5/25, Training Loss: 0.0013, Validation Loss: 0.4330
+[I 2024-04-17 18:20:11,768] Trial 30 finished with value: 0.26784130830320374 and parameters: {'image_size': 256, 'batch_size': 4, 'learning_rate': 1.0620631595527142e-05}. Best is trial 3 with value: 0.26784130830320374.
+Epoch 6/25, Training Loss: 0.0014, Validation Loss: 0.4493
+Early stopping triggered after 6 epochs.
+Best multi_class_log_loss on Validation data until now: 0.26784130830320374
+==================== Training of trial number:31 ====================
+Image size: 128
+Batch size: 16
+Learning rate: 0.000004
+Best multi_class_log_loss on Validation data until now: 0.26784130830320374
+[I 2024-04-17 18:22:28,482] Trial 31 pruned. 
+Epoch 1/25, Training Loss: 1.5292, Validation Loss: 0.9694
+Best multi_class_log_loss on Validation data until now: 0.26784130830320374
+==================== Training of trial number:32 ====================
+Image size: 256
+Batch size: 4
+Learning rate: 0.000053
+Best multi_class_log_loss on Validation data until now: 0.26784130830320374
+[I 2024-04-17 18:31:15,703] Trial 32 pruned. 
+Epoch 1/25, Training Loss: 0.1449, Validation Loss: 0.3273
+Best multi_class_log_loss on Validation data until now: 0.26784130830320374
+==================== Training of trial number:33 ====================
+Image size: 256
+Batch size: 4
+Learning rate: 0.000041
+Best multi_class_log_loss on Validation data until now: 0.26784130830320374
+[I 2024-04-17 18:40:01,462] Trial 33 pruned. 
+Epoch 1/25, Training Loss: 0.1563, Validation Loss: 0.4337
+Best multi_class_log_loss on Validation data until now: 0.26784130830320374
+==================== Training of trial number:34 ====================
+Image size: 256
+Batch size: 4
+Learning rate: 0.000026
+Best multi_class_log_loss on Validation data until now: 0.26784130830320374
+[I 2024-04-17 18:48:47,369] Trial 34 pruned. 
+Epoch 1/25, Training Loss: 0.2012, Validation Loss: 0.3335
+Best multi_class_log_loss on Validation data until now: 0.26784130830320374
+==================== Training of trial number:35 ====================
+Image size: 256
+Batch size: 4
+Learning rate: 0.000092
+Best multi_class_log_loss on Validation data until now: 0.26784130830320374
+[I 2024-04-17 18:57:33,322] Trial 35 pruned. 
+Epoch 1/25, Training Loss: 0.1424, Validation Loss: 0.3223
+Best multi_class_log_loss on Validation data until now: 0.26784130830320374
+==================== Training of trial number:36 ====================
+Image size: 224
+Batch size: 8
+Learning rate: 0.000140
+Best multi_class_log_loss on Validation data until now: 0.26784130830320374
+[I 2024-04-17 19:03:41,719] Trial 36 pruned. 
+Epoch 1/25, Training Loss: 0.1481, Validation Loss: 0.7065
+Best multi_class_log_loss on Validation data until now: 0.26784130830320374
+==================== Training of trial number:37 ====================
+Image size: 128
+Batch size: 4
+Learning rate: 0.000009
+Best multi_class_log_loss on Validation data until now: 0.26784130830320374
+[I 2024-04-17 19:07:44,258] Trial 37 pruned. 
+Epoch 1/25, Training Loss: 0.4542, Validation Loss: 0.4709
+Best multi_class_log_loss on Validation data until now: 0.26784130830320374
+==================== Training of trial number:38 ====================
+Image size: 256
+Batch size: 8
+Learning rate: 0.000006
+Best multi_class_log_loss on Validation data until now: 0.26784130830320374
+[I 2024-04-17 19:15:27,107] Trial 38 pruned. 
+Epoch 1/25, Training Loss: 0.8559, Validation Loss: 0.3202
+Best multi_class_log_loss on Validation data until now: 0.26784130830320374
+==================== Training of trial number:39 ====================
+Image size: 128
+Batch size: 4
+Learning rate: 0.000338
+Best multi_class_log_loss on Validation data until now: 0.26784130830320374
+[I 2024-04-17 19:19:26,051] Trial 39 pruned. 
+Epoch 1/25, Training Loss: 0.2827, Validation Loss: 0.7777
+Best multi_class_log_loss on Validation data until now: 0.26784130830320374
+==================== Training of trial number:40 ====================
+Image size: 256
+Batch size: 8
+Learning rate: 0.000024
+Best multi_class_log_loss on Validation data until now: 0.26784130830320374
+Epoch 1/25, Training Loss: 0.2853, Validation Loss: 0.2825
+Best multi_class_log_loss till now on the current trail on Validation data: 0.2825308866012457
+Epoch 2/25, Training Loss: 0.0149, Validation Loss: 0.3232
+Epoch 3/25, Training Loss: 0.0065, Validation Loss: 0.3409
+Epoch 4/25, Training Loss: 0.0047, Validation Loss: 0.9411
+Epoch 5/25, Training Loss: 0.0029, Validation Loss: 0.4057
+[I 2024-04-17 20:05:25,139] Trial 40 finished with value: 0.26784130830320374 and parameters: {'image_size': 256, 'batch_size': 8, 'learning_rate': 2.4330133721298987e-05}. Best is trial 3 with value: 0.26784130830320374.
+Epoch 6/25, Training Loss: 0.0022, Validation Loss: 0.4094
+Early stopping triggered after 6 epochs.
+Best multi_class_log_loss on Validation data until now: 0.26784130830320374
+==================== Training of trial number:41 ====================
+Image size: 256
+Batch size: 16
+Learning rate: 0.000039
+Best multi_class_log_loss on Validation data until now: 0.26784130830320374
+[I 2024-04-17 20:12:30,691] Trial 41 pruned. 
+Epoch 1/25, Training Loss: 0.2851, Validation Loss: 0.3474
+Best multi_class_log_loss on Validation data until now: 0.26784130830320374
+==================== Training of trial number:42 ====================
+Image size: 256
+Batch size: 4
+Learning rate: 0.000069
+Best multi_class_log_loss on Validation data until now: 0.26784130830320374
+[I 2024-04-17 20:21:16,531] Trial 42 pruned. 
+Epoch 1/25, Training Loss: 0.1359, Validation Loss: 0.4139
+Best multi_class_log_loss on Validation data until now: 0.26784130830320374
+==================== Training of trial number:43 ====================
+Image size: 256
+Batch size: 4
+Learning rate: 0.000030
+Best multi_class_log_loss on Validation data until now: 0.26784130830320374
+Epoch 1/25, Training Loss: 0.1835, Validation Loss: 0.2848
+Best multi_class_log_loss till now on the current trail on Validation data: 0.28478492723750043
+Epoch 2/25, Training Loss: 0.0161, Validation Loss: 0.3410
+Epoch 3/25, Training Loss: 0.0068, Validation Loss: 0.4136
+Epoch 4/25, Training Loss: 0.0049, Validation Loss: 0.4745
+Epoch 5/25, Training Loss: 0.0048, Validation Loss: 0.5254
+[I 2024-04-17 21:13:43,055] Trial 43 finished with value: 0.26784130830320374 and parameters: {'image_size': 256, 'batch_size': 4, 'learning_rate': 2.9596405203045636e-05}. Best is trial 3 with value: 0.26784130830320374.
+Epoch 6/25, Training Loss: 0.0074, Validation Loss: 0.3198
+Early stopping triggered after 6 epochs.
+Best multi_class_log_loss on Validation data until now: 0.26784130830320374
+==================== Training of trial number:44 ====================
+Image size: 256
+Batch size: 4
+Learning rate: 0.000012
+Best multi_class_log_loss on Validation data until now: 0.26784130830320374
+Epoch 1/25, Training Loss: 0.3598, Validation Loss: 0.2819
+Best multi_class_log_loss till now on the current trail on Validation data: 0.28190075259440517
+Epoch 2/25, Training Loss: 0.0195, Validation Loss: 0.3582
+Epoch 3/25, Training Loss: 0.0070, Validation Loss: 0.3911
+Epoch 4/25, Training Loss: 0.0039, Validation Loss: 0.3861
+Epoch 5/25, Training Loss: 0.0024, Validation Loss: 0.4109
+[I 2024-04-17 22:06:09,379] Trial 44 finished with value: 0.26784130830320374 and parameters: {'image_size': 256, 'batch_size': 4, 'learning_rate': 1.186344692499221e-05}. Best is trial 3 with value: 0.26784130830320374.
+Epoch 6/25, Training Loss: 0.0025, Validation Loss: 0.5779
+Early stopping triggered after 6 epochs.
+Best multi_class_log_loss on Validation data until now: 0.26784130830320374
+==================== Training of trial number:45 ====================
+Image size: 256
+Batch size: 4
+Learning rate: 0.000001
+Best multi_class_log_loss on Validation data until now: 0.26784130830320374
+[I 2024-04-17 22:14:56,066] Trial 45 pruned. 
+Epoch 1/25, Training Loss: 1.9522, Validation Loss: 1.4967
+Best multi_class_log_loss on Validation data until now: 0.26784130830320374
+==================== Training of trial number:46 ====================
+Image size: 256
+Batch size: 4
+Learning rate: 0.000002
+Best multi_class_log_loss on Validation data until now: 0.26784130830320374
+[I 2024-04-17 22:23:42,746] Trial 46 pruned. 
+Epoch 1/25, Training Loss: 1.5928, Validation Loss: 0.8787
+Best multi_class_log_loss on Validation data until now: 0.26784130830320374
+==================== Training of trial number:47 ====================
+Image size: 128
+Batch size: 4
+Learning rate: 0.000099
+Best multi_class_log_loss on Validation data until now: 0.26784130830320374
+[I 2024-04-17 22:27:38,705] Trial 47 pruned. 
+Epoch 1/25, Training Loss: 0.1529, Validation Loss: 0.4617
+Best multi_class_log_loss on Validation data until now: 0.26784130830320374
+==================== Training of trial number:48 ====================
+Image size: 224
+Batch size: 8
+Learning rate: 0.000175
+Best multi_class_log_loss on Validation data until now: 0.26784130830320374
+[I 2024-04-17 22:33:46,748] Trial 48 pruned. 
+Epoch 1/25, Training Loss: 0.1475, Validation Loss: 0.4450
+Best multi_class_log_loss on Validation data until now: 0.26784130830320374
+==================== Training of trial number:49 ====================
+Image size: 256
+Batch size: 4
+Learning rate: 0.000020
+Best multi_class_log_loss on Validation data until now: 0.26784130830320374
+Epoch 1/25, Training Loss: 0.2308, Validation Loss: 0.2887
+Best multi_class_log_loss till now on the current trail on Validation data: 0.28868839664596296
+Epoch 2/25, Training Loss: 0.0146, Validation Loss: 0.3753
+Epoch 3/25, Training Loss: 0.0072, Validation Loss: 0.3598
+Epoch 4/25, Training Loss: 0.0035, Validation Loss: 0.3583
+Epoch 5/25, Training Loss: 0.0042, Validation Loss: 0.4683
+[I 2024-04-17 23:26:17,494] Trial 49 finished with value: 0.26784130830320374 and parameters: {'image_size': 256, 'batch_size': 4, 'learning_rate': 2.0469943512756642e-05}. Best is trial 3 with value: 0.26784130830320374.
+Epoch 6/25, Training Loss: 0.0040, Validation Loss: 0.5471
+Early stopping triggered after 6 epochs.
+Best multi_class_log_loss on Validation data until now: 0.26784130830320374
+==================== Training of trial number:50 ====================
+Image size: 256
+Batch size: 8
+Learning rate: 0.000004
+Best multi_class_log_loss on Validation data until now: 0.26784130830320374
+[I 2024-04-17 23:34:02,180] Trial 50 pruned. 
+Epoch 1/25, Training Loss: 1.0754, Validation Loss: 0.4083
+Best multi_class_log_loss on Validation data until now: 0.26784130830320374
+Best trial's number:  3
+Best score: 0.26784130830320374
+Best hyperparameters:
+image_size: 256
+batch_size: 4
+learning_rate: 6.738220887446238e-06
+=== JOB_STATISTICS ===
+=== current date     : Wed 17 Apr 2024 11:34:11 PM CEST
+= Job-ID             : 801925 on tinygpu
+= Job-Name           : convNext_optuna
+= Job-Command        : /home/woody/iwfa/iwfa054h/Project_computer_vision/batch_cv.sh
+= Initial workdir    : /home/woody/iwfa/iwfa054h/Project_computer_vision
+= Queue/Partition    : a100
+= Slurm account      : iwfa with QOS=normal
+= Requested resources:  for 23:59:00
+= Elapsed runtime    : 08:53:09
+= Total RAM usage    : 2.5 GiB of requested  GiB (%)   
+= Node list          : tg096
+= Subm/Elig/Start/End: 2024-04-17T14:41:02 / 2024-04-17T14:41:02 / 2024-04-17T14:41:02 / 2024-04-17T23:34:11
+======================
+=== Quota infos ======
+    Path              Used     SoftQ    HardQ    Gracetime  Filec    FileQ    FiHaQ    FileGrace    
+    /home/hpc           55.5G   104.9G   209.7G        N/A     160K     500K   1,000K        N/A    
+    /home/vault          0.0K  1048.6G  2097.2G        N/A       1      200K     400K        N/A    
+======================
+=== GPU utilization ==
+gpu_name, gpu_bus_id, pid, gpu_utilization [%], mem_utilization [%], max_memory_usage [MiB], time [ms]
+NVIDIA A100-SXM4-40GB, 00000000:01:00.0, 1741803, 92 %, 20 %, 10908 MiB, 31920529 ms

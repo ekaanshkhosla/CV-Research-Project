@@ -1,0 +1,516 @@
+### Starting TaskPrologue of job 797239 on tg097 at Sun 07 Apr 2024 11:40:24 PM CEST
+Running on cores 32-63 with governor ondemand
+Sun Apr  7 23:40:24 2024       
++-----------------------------------------------------------------------------------------+
+| NVIDIA-SMI 550.54.15              Driver Version: 550.54.15      CUDA Version: 12.4     |
+|-----------------------------------------+------------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id          Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |
+|                                         |                        |               MIG M. |
+|=========================================+========================+======================|
+|   0  NVIDIA A100-SXM4-40GB          On  |   00000000:41:00.0 Off |                    0 |
+| N/A   44C    P0             62W /  400W |       0MiB /  40960MiB |      0%      Default |
+|                                         |                        |             Disabled |
++-----------------------------------------+------------------------+----------------------+
+                                                                                         
++-----------------------------------------------------------------------------------------+
+| Processes:                                                                              |
+|  GPU   GI   CI        PID   Type   Process name                              GPU Memory |
+|        ID   ID                                                               Usage      |
+|=========================================================================================|
+|  No running processes found                                                             |
++-----------------------------------------------------------------------------------------+
+### Finished TaskPrologue
+
+[I 2024-04-07 23:41:00,013] Using an existing study with name 'CV_DinoV2_optuna_large3' instead of creating a new one.
+Best trial's number:  42
+Best score: 0.18151528781322104
+Best hyperparameters:
+image_size: 224
+batch_size: 4
+learning_rate: 1.0504088130751306e-06
+fc_units: 1216
+dropout_rate: 0.45
+Number of trials completed: 36
+Number of pruned trials: 27
+Total number of trails completed: 63
+Number of trials to run: 37
+==================== Training of trial number:65 ====================
+Image size: 224
+Batch size: 4
+Learning rate: 0.000001
+Fully connected layer: 256
+Dropout rate: 0.450000
+Best multi_class_log_loss on Validation data until now: 0.18151528781322104
+/home/hpc/iwfa/iwfa054h/.cache/torch/hub/facebookresearch_dinov2_main/dinov2/layers/swiglu_ffn.py:51: UserWarning: xFormers is not available (SwiGLU)
+  warnings.warn("xFormers is not available (SwiGLU)")
+/home/hpc/iwfa/iwfa054h/.cache/torch/hub/facebookresearch_dinov2_main/dinov2/layers/attention.py:33: UserWarning: xFormers is not available (Attention)
+  warnings.warn("xFormers is not available (Attention)")
+/home/hpc/iwfa/iwfa054h/.cache/torch/hub/facebookresearch_dinov2_main/dinov2/layers/block.py:40: UserWarning: xFormers is not available (Block)
+  warnings.warn("xFormers is not available (Block)")
+[I 2024-04-07 23:54:04,798] Trial 65 pruned. 
+Epoch 1/10, Training Loss: 0.2576, Validation Loss: 0.2504
+Best multi_class_log_loss on Validation data until now: 0.18151528781322104
+==================== Training of trial number:66 ====================
+Image size: 224
+Batch size: 4
+Learning rate: 0.000003
+Fully connected layer: 384
+Dropout rate: 0.250000
+Best multi_class_log_loss on Validation data until now: 0.18151528781322104
+[I 2024-04-08 00:07:02,763] Trial 66 pruned. 
+Epoch 1/10, Training Loss: 0.1609, Validation Loss: 0.6569
+Best multi_class_log_loss on Validation data until now: 0.18151528781322104
+==================== Training of trial number:67 ====================
+Image size: 224
+Batch size: 4
+Learning rate: 0.000002
+Fully connected layer: 128
+Dropout rate: 0.400000
+Best multi_class_log_loss on Validation data until now: 0.18151528781322104
+Epoch 1/10, Training Loss: 0.2598, Validation Loss: 0.2449
+Best multi_class_log_loss till now on the current trail on Validation data: 0.2449422231384323
+Epoch 2/10, Training Loss: 0.0576, Validation Loss: 0.2631
+Epoch 3/10, Training Loss: 0.0329, Validation Loss: 0.2378
+Best multi_class_log_loss till now on the current trail on Validation data: 0.23781567986597163
+Epoch 4/10, Training Loss: 0.0284, Validation Loss: 0.2221
+Best multi_class_log_loss till now on the current trail on Validation data: 0.22207602773579985
+Epoch 5/10, Training Loss: 0.0175, Validation Loss: 0.4175
+Epoch 6/10, Training Loss: 0.0145, Validation Loss: 0.2883
+Epoch 7/10, Training Loss: 0.0145, Validation Loss: 0.3608
+Epoch 8/10, Training Loss: 0.0082, Validation Loss: 0.4145
+[I 2024-04-08 02:03:13,942] Trial 67 finished with value: 0.18151528781322104 and parameters: {'image_size': 224, 'batch_size': 4, 'learning_rate': 2.077770643456936e-06, 'fc_units': 128, 'dropout_rate': 0.4}. Best is trial 42 with value: 0.18151528781322104.
+Epoch 9/10, Training Loss: 0.0086, Validation Loss: 0.3554
+Early stopping triggered after 9 epochs.
+Best multi_class_log_loss on Validation data until now: 0.18151528781322104
+==================== Training of trial number:68 ====================
+Image size: 224
+Batch size: 4
+Learning rate: 0.000001
+Fully connected layer: 512
+Dropout rate: 0.300000
+Best multi_class_log_loss on Validation data until now: 0.18151528781322104
+[I 2024-04-08 02:16:16,321] Trial 68 pruned. 
+Epoch 1/10, Training Loss: 0.2634, Validation Loss: 0.2964
+Best multi_class_log_loss on Validation data until now: 0.18151528781322104
+==================== Training of trial number:69 ====================
+Image size: 112
+Batch size: 16
+Learning rate: 0.000042
+Fully connected layer: 256
+Dropout rate: 0.350000
+Best multi_class_log_loss on Validation data until now: 0.18151528781322104
+[I 2024-04-08 02:19:20,558] Trial 69 pruned. 
+Epoch 1/10, Training Loss: 2.3073, Validation Loss: 2.3034
+Best multi_class_log_loss on Validation data until now: 0.18151528781322104
+==================== Training of trial number:70 ====================
+Image size: 224
+Batch size: 4
+Learning rate: 0.000001
+Fully connected layer: 704
+Dropout rate: 0.450000
+Best multi_class_log_loss on Validation data until now: 0.18151528781322104
+Epoch 1/10, Training Loss: 0.2359, Validation Loss: 0.2310
+Best multi_class_log_loss till now on the current trail on Validation data: 0.23100675397153128
+Epoch 2/10, Training Loss: 0.0394, Validation Loss: 0.3272
+Epoch 3/10, Training Loss: 0.0207, Validation Loss: 0.2031
+Best multi_class_log_loss till now on the current trail on Validation data: 0.20306640562551295
+Epoch 4/10, Training Loss: 0.0173, Validation Loss: 0.2390
+Epoch 5/10, Training Loss: 0.0111, Validation Loss: 0.2464
+Epoch 6/10, Training Loss: 0.0065, Validation Loss: 0.2772
+Epoch 7/10, Training Loss: 0.0052, Validation Loss: 0.2674
+[I 2024-04-08 04:02:47,405] Trial 70 finished with value: 0.18151528781322104 and parameters: {'image_size': 224, 'batch_size': 4, 'learning_rate': 1.3312893524072085e-06, 'fc_units': 704, 'dropout_rate': 0.45}. Best is trial 42 with value: 0.18151528781322104.
+Epoch 8/10, Training Loss: 0.0041, Validation Loss: 0.3371
+Early stopping triggered after 8 epochs.
+Best multi_class_log_loss on Validation data until now: 0.18151528781322104
+==================== Training of trial number:71 ====================
+Image size: 224
+Batch size: 4
+Learning rate: 0.000004
+Fully connected layer: 384
+Dropout rate: 0.500000
+Best multi_class_log_loss on Validation data until now: 0.18151528781322104
+[I 2024-04-08 04:15:45,834] Trial 71 pruned. 
+Epoch 1/10, Training Loss: 0.1927, Validation Loss: 0.2811
+Best multi_class_log_loss on Validation data until now: 0.18151528781322104
+==================== Training of trial number:72 ====================
+Image size: 224
+Batch size: 4
+Learning rate: 0.000002
+Fully connected layer: 128
+Dropout rate: 0.400000
+Best multi_class_log_loss on Validation data until now: 0.18151528781322104
+[I 2024-04-08 04:28:43,957] Trial 72 pruned. 
+Epoch 1/10, Training Loss: 0.2339, Validation Loss: 0.3087
+Best multi_class_log_loss on Validation data until now: 0.18151528781322104
+==================== Training of trial number:73 ====================
+Image size: 224
+Batch size: 4
+Learning rate: 0.000002
+Fully connected layer: 256
+Dropout rate: 0.400000
+Best multi_class_log_loss on Validation data until now: 0.18151528781322104
+[I 2024-04-08 04:41:41,618] Trial 73 pruned. 
+Epoch 1/10, Training Loss: 0.2487, Validation Loss: 0.3652
+Best multi_class_log_loss on Validation data until now: 0.18151528781322104
+==================== Training of trial number:74 ====================
+Image size: 224
+Batch size: 4
+Learning rate: 0.000001
+Fully connected layer: 384
+Dropout rate: 0.350000
+Best multi_class_log_loss on Validation data until now: 0.18151528781322104
+Epoch 1/10, Training Loss: 0.2410, Validation Loss: 0.2022
+Best multi_class_log_loss till now on the current trail on Validation data: 0.2022300699402124
+Epoch 2/10, Training Loss: 0.0386, Validation Loss: 0.3003
+Epoch 3/10, Training Loss: 0.0269, Validation Loss: 0.2674
+Epoch 4/10, Training Loss: 0.0113, Validation Loss: 0.2616
+Epoch 5/10, Training Loss: 0.0118, Validation Loss: 0.3889
+[I 2024-04-08 05:59:07,913] Trial 74 finished with value: 0.18151528781322104 and parameters: {'image_size': 224, 'batch_size': 4, 'learning_rate': 1.2395512117159234e-06, 'fc_units': 384, 'dropout_rate': 0.35000000000000003}. Best is trial 42 with value: 0.18151528781322104.
+Epoch 6/10, Training Loss: 0.0050, Validation Loss: 0.3624
+Early stopping triggered after 6 epochs.
+Best multi_class_log_loss on Validation data until now: 0.18151528781322104
+==================== Training of trial number:75 ====================
+Image size: 224
+Batch size: 4
+Learning rate: 0.000002
+Fully connected layer: 192
+Dropout rate: 0.400000
+Best multi_class_log_loss on Validation data until now: 0.18151528781322104
+Epoch 1/10, Training Loss: 0.2157, Validation Loss: 0.1826
+Best multi_class_log_loss till now on the current trail on Validation data: 0.18259804338837662
+Epoch 2/10, Training Loss: 0.0419, Validation Loss: 0.2046
+Epoch 3/10, Training Loss: 0.0271, Validation Loss: 0.2442
+Epoch 4/10, Training Loss: 0.0198, Validation Loss: 0.2964
+Epoch 5/10, Training Loss: 0.0163, Validation Loss: 0.3873
+[I 2024-04-08 07:16:34,056] Trial 75 finished with value: 0.18151528781322104 and parameters: {'image_size': 224, 'batch_size': 4, 'learning_rate': 1.742796397786074e-06, 'fc_units': 192, 'dropout_rate': 0.4}. Best is trial 42 with value: 0.18151528781322104.
+Epoch 6/10, Training Loss: 0.0119, Validation Loss: 0.4716
+Early stopping triggered after 6 epochs.
+Best multi_class_log_loss on Validation data until now: 0.18151528781322104
+==================== Training of trial number:76 ====================
+Image size: 224
+Batch size: 4
+Learning rate: 0.000001
+Fully connected layer: 64
+Dropout rate: 0.450000
+Best multi_class_log_loss on Validation data until now: 0.18151528781322104
+Epoch 1/10, Training Loss: 0.3382, Validation Loss: 0.2150
+Best multi_class_log_loss till now on the current trail on Validation data: 0.21502001482592295
+Epoch 2/10, Training Loss: 0.0695, Validation Loss: 0.2832
+Epoch 3/10, Training Loss: 0.0464, Validation Loss: 0.5172
+Epoch 4/10, Training Loss: 0.0311, Validation Loss: 0.3418
+Epoch 5/10, Training Loss: 0.0262, Validation Loss: 0.3341
+[I 2024-04-08 08:34:00,444] Trial 76 finished with value: 0.18151528781322104 and parameters: {'image_size': 224, 'batch_size': 4, 'learning_rate': 1.2558649706679542e-06, 'fc_units': 64, 'dropout_rate': 0.45}. Best is trial 42 with value: 0.18151528781322104.
+Epoch 6/10, Training Loss: 0.0190, Validation Loss: 0.3393
+Early stopping triggered after 6 epochs.
+Best multi_class_log_loss on Validation data until now: 0.18151528781322104
+==================== Training of trial number:77 ====================
+Image size: 224
+Batch size: 4
+Learning rate: 0.000002
+Fully connected layer: 256
+Dropout rate: 0.500000
+Best multi_class_log_loss on Validation data until now: 0.18151528781322104
+[I 2024-04-08 08:46:58,829] Trial 77 pruned. 
+Epoch 1/10, Training Loss: 0.2176, Validation Loss: 0.2474
+Best multi_class_log_loss on Validation data until now: 0.18151528781322104
+==================== Training of trial number:78 ====================
+Image size: 224
+Batch size: 4
+Learning rate: 0.000003
+Fully connected layer: 576
+Dropout rate: 0.300000
+Best multi_class_log_loss on Validation data until now: 0.18151528781322104
+[I 2024-04-08 08:59:56,859] Trial 78 pruned. 
+Epoch 1/10, Training Loss: 0.1580, Validation Loss: 0.2832
+Best multi_class_log_loss on Validation data until now: 0.18151528781322104
+==================== Training of trial number:79 ====================
+Image size: 224
+Batch size: 4
+Learning rate: 0.000001
+Fully connected layer: 512
+Dropout rate: 0.350000
+Best multi_class_log_loss on Validation data until now: 0.18151528781322104
+Epoch 1/10, Training Loss: 0.2166, Validation Loss: 0.2417
+Best multi_class_log_loss till now on the current trail on Validation data: 0.2417447172249987
+Epoch 2/10, Training Loss: 0.0347, Validation Loss: 0.2818
+Epoch 3/10, Training Loss: 0.0215, Validation Loss: 0.3379
+Epoch 4/10, Training Loss: 0.0123, Validation Loss: 0.2640
+Epoch 5/10, Training Loss: 0.0094, Validation Loss: 0.2578
+[I 2024-04-08 10:17:25,620] Trial 79 finished with value: 0.18151528781322104 and parameters: {'image_size': 224, 'batch_size': 4, 'learning_rate': 1.4801267709020424e-06, 'fc_units': 512, 'dropout_rate': 0.35000000000000003}. Best is trial 42 with value: 0.18151528781322104.
+Epoch 6/10, Training Loss: 0.0083, Validation Loss: 0.4707
+Early stopping triggered after 6 epochs.
+Best multi_class_log_loss on Validation data until now: 0.18151528781322104
+==================== Training of trial number:80 ====================
+Image size: 224
+Batch size: 4
+Learning rate: 0.000001
+Fully connected layer: 1088
+Dropout rate: 0.400000
+Best multi_class_log_loss on Validation data until now: 0.18151528781322104
+[I 2024-04-08 10:30:29,772] Trial 80 pruned. 
+Epoch 1/10, Training Loss: 0.2327, Validation Loss: 0.2606
+Best multi_class_log_loss on Validation data until now: 0.18151528781322104
+==================== Training of trial number:81 ====================
+Image size: 112
+Batch size: 16
+Learning rate: 0.000012
+Fully connected layer: 320
+Dropout rate: 0.450000
+Best multi_class_log_loss on Validation data until now: 0.18151528781322104
+[I 2024-04-08 10:33:35,868] Trial 81 pruned. 
+Epoch 1/10, Training Loss: 1.0722, Validation Loss: 0.7763
+Best multi_class_log_loss on Validation data until now: 0.18151528781322104
+==================== Training of trial number:82 ====================
+Image size: 224
+Batch size: 4
+Learning rate: 0.000002
+Fully connected layer: 128
+Dropout rate: 0.350000
+Best multi_class_log_loss on Validation data until now: 0.18151528781322104
+[I 2024-04-08 10:46:35,448] Trial 82 pruned. 
+Epoch 1/10, Training Loss: 0.2553, Validation Loss: 0.2497
+Best multi_class_log_loss on Validation data until now: 0.18151528781322104
+==================== Training of trial number:83 ====================
+Image size: 224
+Batch size: 4
+Learning rate: 0.000002
+Fully connected layer: 448
+Dropout rate: 0.450000
+Best multi_class_log_loss on Validation data until now: 0.18151528781322104
+[I 2024-04-08 10:59:33,592] Trial 83 pruned. 
+Epoch 1/10, Training Loss: 0.2223, Validation Loss: 0.2457
+Best multi_class_log_loss on Validation data until now: 0.18151528781322104
+==================== Training of trial number:84 ====================
+Image size: 224
+Batch size: 4
+Learning rate: 0.000001
+Fully connected layer: 384
+Dropout rate: 0.450000
+Best multi_class_log_loss on Validation data until now: 0.18151528781322104
+[I 2024-04-08 11:12:32,294] Trial 84 pruned. 
+Epoch 1/10, Training Loss: 0.2716, Validation Loss: 0.2584
+Best multi_class_log_loss on Validation data until now: 0.18151528781322104
+==================== Training of trial number:85 ====================
+Image size: 224
+Batch size: 4
+Learning rate: 0.000001
+Fully connected layer: 1152
+Dropout rate: 0.400000
+Best multi_class_log_loss on Validation data until now: 0.18151528781322104
+Epoch 1/10, Training Loss: 0.2179, Validation Loss: 0.2290
+Best multi_class_log_loss till now on the current trail on Validation data: 0.2289873742849763
+Epoch 2/10, Training Loss: 0.0352, Validation Loss: 0.3098
+Epoch 3/10, Training Loss: 0.0199, Validation Loss: 0.4666
+Epoch 4/10, Training Loss: 0.0101, Validation Loss: 0.4003
+Epoch 5/10, Training Loss: 0.0094, Validation Loss: 0.2856
+[I 2024-04-08 12:30:02,433] Trial 85 finished with value: 0.18151528781322104 and parameters: {'image_size': 224, 'batch_size': 4, 'learning_rate': 1.3239653166072639e-06, 'fc_units': 1152, 'dropout_rate': 0.4}. Best is trial 42 with value: 0.18151528781322104.
+Epoch 6/10, Training Loss: 0.0092, Validation Loss: 0.3772
+Early stopping triggered after 6 epochs.
+Best multi_class_log_loss on Validation data until now: 0.18151528781322104
+==================== Training of trial number:86 ====================
+Image size: 224
+Batch size: 4
+Learning rate: 0.000002
+Fully connected layer: 448
+Dropout rate: 0.500000
+Best multi_class_log_loss on Validation data until now: 0.18151528781322104
+[I 2024-04-08 12:43:04,461] Trial 86 pruned. 
+Epoch 1/10, Training Loss: 0.2271, Validation Loss: 0.5477
+Best multi_class_log_loss on Validation data until now: 0.18151528781322104
+==================== Training of trial number:87 ====================
+Image size: 224
+Batch size: 4
+Learning rate: 0.000002
+Fully connected layer: 256
+Dropout rate: 0.450000
+Best multi_class_log_loss on Validation data until now: 0.18151528781322104
+Epoch 1/10, Training Loss: 0.2159, Validation Loss: 0.2022
+Best multi_class_log_loss till now on the current trail on Validation data: 0.20218044716762004
+Epoch 2/10, Training Loss: 0.0503, Validation Loss: 0.3683
+Epoch 3/10, Training Loss: 0.0338, Validation Loss: 0.4029
+Epoch 4/10, Training Loss: 0.0237, Validation Loss: 0.3065
+Epoch 5/10, Training Loss: 0.0191, Validation Loss: 0.3649
+[I 2024-04-08 14:00:36,920] Trial 87 finished with value: 0.18151528781322104 and parameters: {'image_size': 224, 'batch_size': 4, 'learning_rate': 2.474244354244516e-06, 'fc_units': 256, 'dropout_rate': 0.45}. Best is trial 42 with value: 0.18151528781322104.
+Epoch 6/10, Training Loss: 0.0126, Validation Loss: 0.3698
+Early stopping triggered after 6 epochs.
+Best multi_class_log_loss on Validation data until now: 0.18151528781322104
+==================== Training of trial number:88 ====================
+Image size: 224
+Batch size: 4
+Learning rate: 0.000002
+Fully connected layer: 192
+Dropout rate: 0.400000
+Best multi_class_log_loss on Validation data until now: 0.18151528781322104
+[I 2024-04-08 14:13:34,927] Trial 88 pruned. 
+Epoch 1/10, Training Loss: 0.2017, Validation Loss: 0.2702
+Best multi_class_log_loss on Validation data until now: 0.18151528781322104
+==================== Training of trial number:89 ====================
+Image size: 224
+Batch size: 4
+Learning rate: 0.000078
+Fully connected layer: 576
+Dropout rate: 0.350000
+Best multi_class_log_loss on Validation data until now: 0.18151528781322104
+[I 2024-04-08 14:26:33,196] Trial 89 pruned. 
+Epoch 1/10, Training Loss: 2.3090, Validation Loss: 2.3001
+Best multi_class_log_loss on Validation data until now: 0.18151528781322104
+==================== Training of trial number:90 ====================
+Image size: 224
+Batch size: 4
+Learning rate: 0.000001
+Fully connected layer: 320
+Dropout rate: 0.800000
+Best multi_class_log_loss on Validation data until now: 0.18151528781322104
+[I 2024-04-08 14:39:31,422] Trial 90 pruned. 
+Epoch 1/10, Training Loss: 0.4941, Validation Loss: 0.2532
+Best multi_class_log_loss on Validation data until now: 0.18151528781322104
+==================== Training of trial number:91 ====================
+Image size: 224
+Batch size: 4
+Learning rate: 0.000001
+Fully connected layer: 192
+Dropout rate: 0.250000
+Best multi_class_log_loss on Validation data until now: 0.18151528781322104
+[I 2024-04-08 14:52:29,604] Trial 91 pruned. 
+Epoch 1/10, Training Loss: 0.2092, Validation Loss: 0.3062
+Best multi_class_log_loss on Validation data until now: 0.18151528781322104
+==================== Training of trial number:92 ====================
+Image size: 112
+Batch size: 4
+Learning rate: 0.000006
+Fully connected layer: 384
+Dropout rate: 0.450000
+Best multi_class_log_loss on Validation data until now: 0.18151528781322104
+[I 2024-04-08 14:57:40,623] Trial 92 pruned. 
+Epoch 1/10, Training Loss: 0.5550, Validation Loss: 0.6263
+Best multi_class_log_loss on Validation data until now: 0.18151528781322104
+==================== Training of trial number:93 ====================
+Image size: 224
+Batch size: 4
+Learning rate: 0.000003
+Fully connected layer: 640
+Dropout rate: 0.500000
+Best multi_class_log_loss on Validation data until now: 0.18151528781322104
+[I 2024-04-08 15:10:39,557] Trial 93 pruned. 
+Epoch 1/10, Training Loss: 0.1882, Validation Loss: 0.2906
+Best multi_class_log_loss on Validation data until now: 0.18151528781322104
+==================== Training of trial number:94 ====================
+Image size: 224
+Batch size: 4
+Learning rate: 0.000007
+Fully connected layer: 512
+Dropout rate: 0.500000
+Best multi_class_log_loss on Validation data until now: 0.18151528781322104
+[I 2024-04-08 15:23:38,221] Trial 94 pruned. 
+Epoch 1/10, Training Loss: 0.3120, Validation Loss: 0.3260
+Best multi_class_log_loss on Validation data until now: 0.18151528781322104
+==================== Training of trial number:95 ====================
+Image size: 224
+Batch size: 4
+Learning rate: 0.000003
+Fully connected layer: 704
+Dropout rate: 0.400000
+Best multi_class_log_loss on Validation data until now: 0.18151528781322104
+[I 2024-04-08 15:36:36,264] Trial 95 pruned. 
+Epoch 1/10, Training Loss: 0.1838, Validation Loss: 0.3314
+Best multi_class_log_loss on Validation data until now: 0.18151528781322104
+==================== Training of trial number:96 ====================
+Image size: 224
+Batch size: 4
+Learning rate: 0.000004
+Fully connected layer: 832
+Dropout rate: 0.550000
+Best multi_class_log_loss on Validation data until now: 0.18151528781322104
+[I 2024-04-08 15:49:34,305] Trial 96 pruned. 
+Epoch 1/10, Training Loss: 0.2042, Validation Loss: 0.2709
+Best multi_class_log_loss on Validation data until now: 0.18151528781322104
+==================== Training of trial number:97 ====================
+Image size: 224
+Batch size: 4
+Learning rate: 0.000002
+Fully connected layer: 576
+Dropout rate: 0.400000
+Best multi_class_log_loss on Validation data until now: 0.18151528781322104
+[I 2024-04-08 16:02:32,114] Trial 97 pruned. 
+Epoch 1/10, Training Loss: 0.1946, Validation Loss: 0.2484
+Best multi_class_log_loss on Validation data until now: 0.18151528781322104
+==================== Training of trial number:98 ====================
+Image size: 224
+Batch size: 16
+Learning rate: 0.000004
+Fully connected layer: 1344
+Dropout rate: 0.450000
+Best multi_class_log_loss on Validation data until now: 0.18151528781322104
+Epoch 1/10, Training Loss: 0.2364, Validation Loss: 0.2128
+Best multi_class_log_loss till now on the current trail on Validation data: 0.21276911134150217
+Epoch 2/10, Training Loss: 0.0332, Validation Loss: 0.2126
+Best multi_class_log_loss till now on the current trail on Validation data: 0.21256150369200918
+Epoch 3/10, Training Loss: 0.0186, Validation Loss: 0.2303
+Epoch 4/10, Training Loss: 0.0160, Validation Loss: 0.2757
+Epoch 5/10, Training Loss: 0.0183, Validation Loss: 0.3173
+Epoch 6/10, Training Loss: 0.0022, Validation Loss: 0.4426
+[I 2024-04-08 17:18:10,260] Trial 98 finished with value: 0.18151528781322104 and parameters: {'image_size': 224, 'batch_size': 16, 'learning_rate': 3.6910466129405043e-06, 'fc_units': 1344, 'dropout_rate': 0.45}. Best is trial 42 with value: 0.18151528781322104.
+Epoch 7/10, Training Loss: 0.0041, Validation Loss: 0.3230
+Early stopping triggered after 7 epochs.
+Best multi_class_log_loss on Validation data until now: 0.18151528781322104
+==================== Training of trial number:99 ====================
+Image size: 224
+Batch size: 4
+Learning rate: 0.000001
+Fully connected layer: 640
+Dropout rate: 0.350000
+Best multi_class_log_loss on Validation data until now: 0.18151528781322104
+[I 2024-04-08 17:31:12,568] Trial 99 pruned. 
+Epoch 1/10, Training Loss: 0.2047, Validation Loss: 0.2694
+Best multi_class_log_loss on Validation data until now: 0.18151528781322104
+==================== Training of trial number:100 ====================
+Image size: 224
+Batch size: 4
+Learning rate: 0.000005
+Fully connected layer: 448
+Dropout rate: 0.550000
+Best multi_class_log_loss on Validation data until now: 0.18151528781322104
+[I 2024-04-08 17:44:10,381] Trial 100 pruned. 
+Epoch 1/10, Training Loss: 0.2348, Validation Loss: 0.3099
+Best multi_class_log_loss on Validation data until now: 0.18151528781322104
+==================== Training of trial number:101 ====================
+Image size: 224
+Batch size: 4
+Learning rate: 0.000020
+Fully connected layer: 320
+Dropout rate: 0.750000
+Best multi_class_log_loss on Validation data until now: 0.18151528781322104
+[I 2024-04-08 17:57:08,659] Trial 101 pruned. 
+Epoch 1/10, Training Loss: 2.3104, Validation Loss: 2.3026
+Best multi_class_log_loss on Validation data until now: 0.18151528781322104
+Best trial's number:  42
+Best score: 0.18151528781322104
+Best hyperparameters:
+image_size: 224
+batch_size: 4
+learning_rate: 1.0504088130751306e-06
+fc_units: 1216
+dropout_rate: 0.45
+=== JOB_STATISTICS ===
+=== current date     : Mon 08 Apr 2024 05:57:17 PM CEST
+= Job-ID             : 797239 on tinygpu
+= Job-Name           : DinoV2_optuna_large
+= Job-Command        : /home/woody/iwfa/iwfa054h/Project_computer_vision/batch_cv.sh
+= Initial workdir    : /home/woody/iwfa/iwfa054h/Project_computer_vision
+= Queue/Partition    : a100
+= Slurm account      : iwfa with QOS=normal
+= Requested resources:  for 23:59:00
+= Elapsed runtime    : 18:17:16
+= Total RAM usage    : 3.0 GiB of requested  GiB (%)   
+= Node list          : tg097
+= Subm/Elig/Start/End: 2024-04-07T23:40:00 / 2024-04-07T23:40:00 / 2024-04-07T23:40:01 / 2024-04-08T17:57:17
+======================
+=== Quota infos ======
+    Path              Used     SoftQ    HardQ    Gracetime  Filec    FileQ    FiHaQ    FileGrace    
+    /home/hpc           55.2G   104.9G   209.7G        N/A     158K     500K   1,000K        N/A    
+    /home/vault          0.0K  1048.6G  2097.2G        N/A       1      200K     400K        N/A    
+======================
+=== GPU utilization ==
+gpu_name, gpu_bus_id, pid, gpu_utilization [%], mem_utilization [%], max_memory_usage [MiB], time [ms]
+NVIDIA A100-SXM4-40GB, 00000000:41:00.0, 995883, 97 %, 20 %, 14846 MiB, 65775343 ms

@@ -1,0 +1,260 @@
+### Starting TaskPrologue of job 806014 on tg097 at Wed 24 Apr 2024 07:02:47 PM CEST
+Running on cores 96-127 with governor ondemand
+Wed Apr 24 19:02:47 2024       
++-----------------------------------------------------------------------------------------+
+| NVIDIA-SMI 550.54.15              Driver Version: 550.54.15      CUDA Version: 12.4     |
+|-----------------------------------------+------------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id          Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |
+|                                         |                        |               MIG M. |
+|=========================================+========================+======================|
+|   0  NVIDIA A100-SXM4-40GB          On  |   00000000:C1:00.0 Off |                    0 |
+| N/A   35C    P0             55W /  400W |       0MiB /  40960MiB |      0%      Default |
+|                                         |                        |             Disabled |
++-----------------------------------------+------------------------+----------------------+
+                                                                                         
++-----------------------------------------------------------------------------------------+
+| Processes:                                                                              |
+|  GPU   GI   CI        PID   Type   Process name                              GPU Memory |
+|        ID   ID                                                               Usage      |
+|=========================================================================================|
+|  No running processes found                                                             |
++-----------------------------------------------------------------------------------------+
+### Finished TaskPrologue
+
+[I 2024-04-24 19:03:47,949] Using an existing study with name 'CV_EfficientNet_V2_L_try1' instead of creating a new one.
+Best trial's number:  31
+Best score: 0.3171555553201197
+Best hyperparameters:
+image_size: 256
+batch_size: 16
+learning_rate: 2.4017967647941986e-05
+fc_units: 1344
+dropout_rate: 0.55
+layer_freeze_upto: features.2.6.block.1.1.bias
+Number of trials completed: 28
+Number of pruned trials: 57
+Total number of trails completed: 85
+Number of trials to run: 15
+==================== Training of trial number:86 ====================
+Image size: 256
+Batch size: 8
+Learning rate: 0.000011
+Fully connected layer: 1408
+Dropout rate: 0.350000
+Layer Freeze Upto: features.2.6.block.1.1.bias
+Best multi_class_log_loss on Validation data until now: 0.3171555553201197
+[I 2024-04-24 19:08:32,843] Trial 86 pruned. 
+Epoch 1/100, Training Loss: 0.5849, Validation Loss: 0.5287
+Best multi_class_log_loss on Validation data until now: 0.3171555553201197
+==================== Training of trial number:87 ====================
+Image size: 256
+Batch size: 8
+Learning rate: 0.000013
+Fully connected layer: 1600
+Dropout rate: 0.550000
+Layer Freeze Upto: features.6.24.block.3.1.bias
+Best multi_class_log_loss on Validation data until now: 0.3171555553201197
+[I 2024-04-24 19:11:11,296] Trial 87 pruned. 
+Epoch 1/100, Training Loss: 0.9408, Validation Loss: 0.6238
+Best multi_class_log_loss on Validation data until now: 0.3171555553201197
+==================== Training of trial number:88 ====================
+Image size: 128
+Batch size: 8
+Learning rate: 0.000016
+Fully connected layer: 1088
+Dropout rate: 0.400000
+Layer Freeze Upto: features.1.3.block.0.1.bias
+Best multi_class_log_loss on Validation data until now: 0.3171555553201197
+[I 2024-04-24 19:16:03,766] Trial 88 pruned. 
+Epoch 1/100, Training Loss: 0.6369, Validation Loss: 0.6664
+Best multi_class_log_loss on Validation data until now: 0.3171555553201197
+==================== Training of trial number:89 ====================
+Image size: 256
+Batch size: 8
+Learning rate: 0.000018
+Fully connected layer: 1024
+Dropout rate: 0.450000
+Layer Freeze Upto: features.0.1.bias
+Best multi_class_log_loss on Validation data until now: 0.3171555553201197
+[I 2024-04-24 19:21:03,024] Trial 89 pruned. 
+Epoch 1/100, Training Loss: 0.4587, Validation Loss: 0.5343
+Best multi_class_log_loss on Validation data until now: 0.3171555553201197
+==================== Training of trial number:90 ====================
+Image size: 256
+Batch size: 8
+Learning rate: 0.000021
+Fully connected layer: 1472
+Dropout rate: 0.350000
+Layer Freeze Upto: features.5.18.block.3.1.bias
+Best multi_class_log_loss on Validation data until now: 0.3171555553201197
+[I 2024-04-24 19:24:39,210] Trial 90 pruned. 
+Epoch 1/100, Training Loss: 0.4123, Validation Loss: 0.4337
+Best multi_class_log_loss on Validation data until now: 0.3171555553201197
+==================== Training of trial number:91 ====================
+Image size: 256
+Batch size: 4
+Learning rate: 0.000012
+Fully connected layer: 1664
+Dropout rate: 0.500000
+Layer Freeze Upto: features.2.6.block.1.1.bias
+Best multi_class_log_loss on Validation data until now: 0.3171555553201197
+[I 2024-04-24 19:34:14,017] Trial 91 pruned. 
+Epoch 1/100, Training Loss: 0.5163, Validation Loss: 0.4770
+Best multi_class_log_loss on Validation data until now: 0.3171555553201197
+==================== Training of trial number:92 ====================
+Image size: 256
+Batch size: 8
+Learning rate: 0.000016
+Fully connected layer: 1472
+Dropout rate: 0.400000
+Layer Freeze Upto: features.0.1.bias
+Best multi_class_log_loss on Validation data until now: 0.3171555553201197
+Epoch 1/100, Training Loss: 0.4507, Validation Loss: 0.4004
+Best multi_class_log_loss till now on the current trail on Validation data: 0.40044659024634355
+Epoch 2/100, Training Loss: 0.0414, Validation Loss: 0.3988
+Best multi_class_log_loss till now on the current trail on Validation data: 0.3988060316917061
+Epoch 3/100, Training Loss: 0.0181, Validation Loss: 0.5042
+Epoch 4/100, Training Loss: 0.0095, Validation Loss: 0.6886
+Epoch 5/100, Training Loss: 0.0107, Validation Loss: 0.6874
+Epoch 6/100, Training Loss: 0.0093, Validation Loss: 0.6643
+Epoch 7/100, Training Loss: 0.0053, Validation Loss: 0.5419
+Epoch 8/100, Training Loss: 0.0042, Validation Loss: 0.7089
+Epoch 9/100, Training Loss: 0.0075, Validation Loss: 0.4474
+Epoch 10/100, Training Loss: 0.0082, Validation Loss: 0.5281
+Epoch 11/100, Training Loss: 0.0045, Validation Loss: 0.5914
+[I 2024-04-24 20:35:15,429] Trial 92 finished with value: 0.3171555553201197 and parameters: {'image_size': 256, 'batch_size': 8, 'learning_rate': 1.550565281248128e-05, 'fc_units': 1472, 'dropout_rate': 0.4, 'layer_freeze_upto': 'features.0.1.bias'}. Best is trial 31 with value: 0.3171555553201197.
+Epoch 12/100, Training Loss: 0.0054, Validation Loss: 0.5962
+Early stopping triggered after 12 epochs.
+Best multi_class_log_loss on Validation data until now: 0.3171555553201197
+==================== Training of trial number:93 ====================
+Image size: 256
+Batch size: 8
+Learning rate: 0.000014
+Fully connected layer: 1408
+Dropout rate: 0.400000
+Layer Freeze Upto: features.0.1.bias
+Best multi_class_log_loss on Validation data until now: 0.3171555553201197
+[I 2024-04-24 20:40:24,554] Trial 93 pruned. 
+Epoch 1/100, Training Loss: 0.5025, Validation Loss: 0.4542
+Best multi_class_log_loss on Validation data until now: 0.3171555553201197
+==================== Training of trial number:94 ====================
+Image size: 256
+Batch size: 8
+Learning rate: 0.000016
+Fully connected layer: 1280
+Dropout rate: 0.450000
+Layer Freeze Upto: features.0.1.bias
+Best multi_class_log_loss on Validation data until now: 0.3171555553201197
+Epoch 1/100, Training Loss: 0.4663, Validation Loss: 0.3701
+Best multi_class_log_loss till now on the current trail on Validation data: 0.3701328649649119
+Epoch 2/100, Training Loss: 0.0382, Validation Loss: 0.5757
+Epoch 3/100, Training Loss: 0.0166, Validation Loss: 0.4968
+Epoch 4/100, Training Loss: 0.0133, Validation Loss: 0.5624
+Epoch 5/100, Training Loss: 0.0082, Validation Loss: 0.5198
+Epoch 6/100, Training Loss: 0.0046, Validation Loss: 0.6222
+Epoch 7/100, Training Loss: 0.0063, Validation Loss: 0.6766
+Epoch 8/100, Training Loss: 0.0069, Validation Loss: 0.8323
+Epoch 9/100, Training Loss: 0.0045, Validation Loss: 0.6938
+Epoch 10/100, Training Loss: 0.0075, Validation Loss: 0.6498
+[I 2024-04-24 21:36:20,988] Trial 94 finished with value: 0.3171555553201197 and parameters: {'image_size': 256, 'batch_size': 8, 'learning_rate': 1.576388750740462e-05, 'fc_units': 1280, 'dropout_rate': 0.45, 'layer_freeze_upto': 'features.0.1.bias'}. Best is trial 31 with value: 0.3171555553201197.
+Epoch 11/100, Training Loss: 0.0038, Validation Loss: 0.5546
+Early stopping triggered after 11 epochs.
+Best multi_class_log_loss on Validation data until now: 0.3171555553201197
+==================== Training of trial number:95 ====================
+Image size: 256
+Batch size: 8
+Learning rate: 0.000010
+Fully connected layer: 1536
+Dropout rate: 0.650000
+Layer Freeze Upto: features.3.6.block.1.1.bias
+Best multi_class_log_loss on Validation data until now: 0.3171555553201197
+[I 2024-04-24 21:41:09,424] Trial 95 pruned. 
+Epoch 1/100, Training Loss: 0.7859, Validation Loss: 0.4516
+Best multi_class_log_loss on Validation data until now: 0.3171555553201197
+==================== Training of trial number:96 ====================
+Image size: 256
+Batch size: 8
+Learning rate: 0.000449
+Fully connected layer: 1408
+Dropout rate: 0.350000
+Layer Freeze Upto: features.0.1.bias
+Best multi_class_log_loss on Validation data until now: 0.3171555553201197
+[I 2024-04-24 21:46:13,654] Trial 96 pruned. 
+Epoch 1/100, Training Loss: 0.3686, Validation Loss: 0.9918
+Best multi_class_log_loss on Validation data until now: 0.3171555553201197
+==================== Training of trial number:97 ====================
+Image size: 256
+Batch size: 8
+Learning rate: 0.000020
+Fully connected layer: 1472
+Dropout rate: 0.300000
+Layer Freeze Upto: features.3.6.block.1.1.bias
+Best multi_class_log_loss on Validation data until now: 0.3171555553201197
+[I 2024-04-24 21:51:01,415] Trial 97 pruned. 
+Epoch 1/100, Training Loss: 0.3827, Validation Loss: 0.4403
+Best multi_class_log_loss on Validation data until now: 0.3171555553201197
+==================== Training of trial number:98 ====================
+Image size: 224
+Batch size: 8
+Learning rate: 0.000043
+Fully connected layer: 1344
+Dropout rate: 0.400000
+Layer Freeze Upto: features.7.6.block.3.1.bias
+Best multi_class_log_loss on Validation data until now: 0.3171555553201197
+[I 2024-04-24 21:53:12,245] Trial 98 pruned. 
+Epoch 1/100, Training Loss: 1.3564, Validation Loss: 1.3378
+Best multi_class_log_loss on Validation data until now: 0.3171555553201197
+==================== Training of trial number:99 ====================
+Image size: 256
+Batch size: 16
+Learning rate: 0.000013
+Fully connected layer: 1728
+Dropout rate: 0.500000
+Layer Freeze Upto: features.2.6.block.1.1.bias
+Best multi_class_log_loss on Validation data until now: 0.3171555553201197
+[I 2024-04-24 21:55:48,189] Trial 99 pruned. 
+Epoch 1/100, Training Loss: 0.6608, Validation Loss: 0.4316
+Best multi_class_log_loss on Validation data until now: 0.3171555553201197
+==================== Training of trial number:100 ====================
+Image size: 256
+Batch size: 8
+Learning rate: 0.000024
+Fully connected layer: 1216
+Dropout rate: 0.450000
+Layer Freeze Upto: features.4.9.block.3.1.bias
+Best multi_class_log_loss on Validation data until now: 0.3171555553201197
+[I 2024-04-24 22:00:20,504] Trial 100 pruned. 
+Epoch 1/100, Training Loss: 0.3857, Validation Loss: 0.4786
+Best multi_class_log_loss on Validation data until now: 0.3171555553201197
+Best trial's number:  31
+Best score: 0.3171555553201197
+Best hyperparameters:
+image_size: 256
+batch_size: 16
+learning_rate: 2.4017967647941986e-05
+fc_units: 1344
+dropout_rate: 0.55
+layer_freeze_upto: features.2.6.block.1.1.bias
+=== JOB_STATISTICS ===
+=== current date     : Wed 24 Apr 2024 10:00:30 PM CEST
+= Job-ID             : 806014 on tinygpu
+= Job-Name           : Efficient_Net_V2_L
+= Job-Command        : /home/woody/iwfa/iwfa054h/Project_computer_vision/batch_cv.sh
+= Initial workdir    : /home/woody/iwfa/iwfa054h/Project_computer_vision
+= Queue/Partition    : a100
+= Slurm account      : iwfa with QOS=normal
+= Requested resources:  for 23:59:00
+= Elapsed runtime    : 02:57:45
+= Total RAM usage    : 2.3 GiB of requested  GiB (%)   
+= Node list          : tg097
+= Subm/Elig/Start/End: 2024-04-24T18:56:34 / 2024-04-24T18:56:34 / 2024-04-24T19:02:45 / 2024-04-24T22:00:30
+======================
+=== Quota infos ======
+    Path              Used     SoftQ    HardQ    Gracetime  Filec    FileQ    FiHaQ    FileGrace    
+    /home/hpc           55.5G   104.9G   209.7G        N/A     159K     500K   1,000K        N/A    
+    /home/vault          0.0K  1048.6G  2097.2G        N/A       1      200K     400K        N/A    
+======================
+=== GPU utilization ==
+gpu_name, gpu_bus_id, pid, gpu_utilization [%], mem_utilization [%], max_memory_usage [MiB], time [ms]
+NVIDIA A100-SXM4-40GB, 00000000:C1:00.0, 120799, 50 %, 18 %, 9336 MiB, 10600106 ms
