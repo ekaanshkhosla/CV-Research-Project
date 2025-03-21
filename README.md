@@ -4,13 +4,13 @@
 ![PyTorch](https://img.shields.io/badge/PyTorch-DeepLearning-red)
 ![License](https://img.shields.io/badge/License-MIT-green)
 
-## 📌 Overview
+## Overview
 
 This repository contains my solution for the **[State Farm Distracted Driver Detection](https://www.kaggle.com/c/state-farm-distracted-driver-detection)** competition. The goal is to classify driver behaviors into 10 different categories to improve road safety.
 
 ---
 
-## 🚦 Problem Statement
+## Problem Statement
 
 The dataset consists of images captured inside a car, where the task is to classify drivers into the following categories:
 
@@ -27,7 +27,7 @@ The dataset consists of images captured inside a car, where the task is to class
 
 ---
 
-## 📂 Project Structure
+## Project Structure
 
 ```
 ├── all_models/                                              # All Models used in Study
@@ -55,3 +55,30 @@ The dataset consists of images captured inside a car, where the task is to class
 ├── data_augmentation_apply.ipynb                            # Data Augmentation applied
 └── train_valid_split.xlsx                                   # Train, Validation Split for Optuna Study
 ```
+---
+
+
+## Results Table
+
+| Resulting Ensemble Model | Multi-class Logarithmic Loss |
+|--------------------------|-----------------------------|
+| Avg_EfficientNet | 0.20717 |
+| Avg_DinoV2 | 0.13525 |
+| Avg_ConvNext | 0.16608 |
+| Avg_EfficientNet_ConvNext_without_aug | 0.17468 |
+| Avg_EfficientNet_ConvNext_with_aug | 0.17536 |
+| Avg_EfficientNet_DinoV2_without_aug | 0.14859 |
+| Avg_EfficientNet_DinoV2_with_aug | 0.16369 |
+| Avg_DinoV2_ConvNext_without_aug | 0.13589 |
+| Avg_DinoV2_ConvNext_with_aug | 0.15156 |
+| Avg_EfficientNet_DinoV2_ConvNext_without_aug | 0.15273 |
+| Avg_EfficientNet_DinoV2_ConvNext_with_aug | 0.16326 |
+| Avg_DinoV2_ConvNext | 0.13609 |
+
+## Conclusions
+
+- **DinoV2_Vitl14** performs as the best model out of the three tested.
+- An ensemble model (**Avg_EfficientNet, Avg_DinoV2, and Avg_ConvNext**) outperforms each of its individual models. For example, **Avg_EfficientNet** achieves better performance than either EfficientNet_V2_L without augmentation or EfficientNet_V2_L with augmentation on their own.
+- **Avg_DinoV2** achieved the best performance with a multi-class logarithmic loss of **0.13525**, followed by **Avg_DinoV2_ConvNext_without_aug** at **0.13589**, and **Avg_DinoV2_ConvNext** in third place with a loss of **0.13609**.
+- In this **Kaggle challenge**, our results surpassed the multi-class logarithmic loss of **0.13672**, achieved by the participant who ranked **7th on the leaderboard**.
+
