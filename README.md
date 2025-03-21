@@ -28,3 +28,27 @@ The dataset consists of images captured inside a car, where the task is to class
 ---
 
 ## 📂 Project Structure
+├── all_models/
+│   ├── Efficient_Net/
+│   │   ├── CV_EfficientNet_V2_L_try1.db
+│   │   ├── Efficient_Net_V2_L0806014
+│   │   ├── Efficient_Net_V2_L.py
+│   │   ├── efficientnet-with-data-augmentation.ipynb
+│   │   └── efficientnet-without-data-augmentation.ipynb
+│   ├── DinoV2/
+│   │   ├── CV_DinoV2_optuna_large3.db
+│   │   ├── DinoV2-with-augmentation.ipynb
+│   │   ├── DinoV2-without-augmentation.ipynb
+│   │   ├── DinoV2_optuna_large.o797239
+│   │   └── DinoV2_optuna_large.py
+│   └── ConvNext/
+│       ├── convNext_optuna.o801925
+│       ├── convNext_optuna.py
+│       ├── convNext_optuna_try4.db
+│       ├── convnext-model-augmentation.ipynb
+│       └── convnext-model-without-augmentation.ipynb
+├── README.md
+├── avg_Model.ipynb
+├── data_augmentation.ipynb
+├── data_augmentation_apply.ipynb
+└── train_valid_split.xlsx
