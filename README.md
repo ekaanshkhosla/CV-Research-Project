@@ -30,28 +30,28 @@ The dataset consists of images captured inside a car, where the task is to class
 ## 📂 Project Structure
 
 ```
-├── all_models/
-│   ├── Efficient_Net/
-│   │   ├── CV_EfficientNet_V2_L_try1.db
-│   │   ├── Efficient_Net_V2_L0806014
-│   │   ├── Efficient_Net_V2_L.py
-│   │   ├── efficientnet-with-data-augmentation.ipynb
-│   │   └── efficientnet-without-data-augmentation.ipynb
-│   ├── DinoV2/
-│   │   ├── CV_DinoV2_optuna_large3.db
-│   │   ├── DinoV2-with-augmentation.ipynb
-│   │   ├── DinoV2-without-augmentation.ipynb
-│   │   ├── DinoV2_optuna_large.o797239
-│   │   └── DinoV2_optuna_large.py
-│   └── ConvNext/
-│       ├── convNext_optuna.o801925
-│       ├── convNext_optuna.py
-│       ├── convNext_optuna_try4.db
-│       ├── convnext-model-augmentation.ipynb
-│       └── convnext-model-without-augmentation.ipynb
-├── README.md
-├── avg_Model.ipynb
-├── data_augmentation.ipynb
-├── data_augmentation_apply.ipynb
-└── train_valid_split.xlsx
+├── all_models/                                              # All Models used in Study
+│   ├── Efficient_Net/                                       # Results of Efficient_Net
+│   │   ├── CV_EfficientNet_V2_L_try1.db                     # Optuna Study db file   
+│   │   ├── Efficient_Net_V2_L0806014                        # Logs
+│   │   ├── Efficient_Net_V2_L.py                            # Optuna Study file
+│   │   ├── efficientnet-with-data-augmentation.ipynb        # Efficient_Net with data augmentation
+│   │   └── efficientnet-without-data-augmentation.ipynb     # Efficient_Net without data augmentation
+│   ├── DinoV2/                                              # Results of DinoV2
+│   │   ├── CV_DinoV2_optuna_large3.db                       # Optuna Study db file   
+│   │   ├── DinoV2-with-augmentation.ipynb                   # DinoV2 with data augmentation
+│   │   ├── DinoV2-without-augmentation.ipynb                # DinoV2 without data augmentation
+│   │   ├── DinoV2_optuna_large.o797239                      # Logs
+│   │   └── DinoV2_optuna_large.py                           # Optuna Study file
+│   └── ConvNext/                                            # Results of ConvNext
+│       ├── convNext_optuna.o801925                          # Logs
+│       ├── convNext_optuna.py                               # Optuna Study file
+│       ├── convNext_optuna_try4.db                          # Optuna Study db file  
+│       ├── convnext-model-augmentation.ipynb                # convnext with data augmentation
+│       └── convnext-model-without-augmentation.ipynb        # convnext without data augmentation
+├── README.md                                                # README File
+├── avg_Model.ipynb                                          # Ensemble Model
+├── data_augmentation.ipynb                                  # Data Augmentation experiments
+├── data_augmentation_apply.ipynb                            # Data Augmentation applied
+└── train_valid_split.xlsx                                   # Train, Validation Split for Optuna Study
 ```
