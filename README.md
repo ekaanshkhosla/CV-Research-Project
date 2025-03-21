@@ -28,6 +28,8 @@ The dataset consists of images captured inside a car, where the task is to class
 ---
 
 ## 📂 Project Structure
+
+```
 ├── all_models/
 │   ├── Efficient_Net/
 │   │   ├── CV_EfficientNet_V2_L_try1.db
@@ -52,3 +54,4 @@ The dataset consists of images captured inside a car, where the task is to class
 ├── data_augmentation.ipynb
 ├── data_augmentation_apply.ipynb
 └── train_valid_split.xlsx
+```
